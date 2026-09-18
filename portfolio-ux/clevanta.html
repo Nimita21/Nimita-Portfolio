@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clevanta Consulting Case Study | Nimita Priyadarshi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a0a0a',
+                            light: '#fafafa',
+                            accent: '#00ff9c',
+                            muted: '#1f1f1f',
+                            slate: '#121212'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #fafafa; overflow-x: hidden; }
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 0; height: 1px; bottom: -2px; left: 0;
+            background-color: #fafafa; transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="antialiased">
+
+     <!-- Navigation -->
+     <nav class="fixed top-0 left-0 w-full z-50 px-8 py-6 flex justify-between items-center bg-brand-dark/90 backdrop-blur-md border-b border-white/5">
+        <a href="index.html" class="text-xl font-bold tracking-tight">Nimita.</a>
+        <ul class="flex space-x-8 text-sm font-medium text-gray-400">
+            <li><a href="services.html" class="nav-link hover:text-white transition-colors">Services</a></li>
+            <li><a href="about.html" class="nav-link text-white">About</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Project Hero -->
+    <header class="pt-48 pb-24 px-8 max-w-7xl mx-auto">
+        <div class="mb-12">
+            <span class="text-brand-accent font-mono text-sm mb-4 block uppercase tracking-widest">Brand Strategy • Web Design • Development</span>
+            <h1 class="text-6xl md:text-8xl font-semibold leading-tight mb-8">Clevanta Consulting</h1>
+            <p class="text-2xl text-gray-400 max-w-3xl leading-relaxed">
+                Founding a design agency to bridge the gap between technical complexity and high-end brand narratives for emerging startups.
+            </p>
+        </div>
+        
+        <div class="relative w-full aspect-[21/9] overflow-hidden rounded-3xl bg-brand-muted">
+            <img class="w-full h-full object-cover" src="images/clevanta1.jpg" alt="minimalist clean office desk with a large monitor showing a premium branding website, dark aesthetic" />
+        </div>
+    </header>
+
+    <!-- Project Meta -->
+    <section class="py-16 px-8 border-y border-white/5 bg-brand-slate/50">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12">
+            <div>
+                <span class="text-xs uppercase tracking-widest text-gray-500 mb-2 block">Role</span>
+                <p class="font-medium">Founder & UI UX Designer</p>
+            </div>
+            <div>
+                <span class="text-xs uppercase tracking-widest text-gray-500 mb-2 block">Duration</span>
+                <p class="font-medium">Feb 2026 — Present</p>
+            </div>
+            <div>
+                <span class="text-xs uppercase tracking-widest text-gray-500 mb-2 block">Focus</span>
+                <p class="font-medium">UX Process & Implementation</p>
+            </div>
+            <div>
+                <span class="text-xs uppercase tracking-widest text-gray-500 mb-2 block">Tech</span>
+                <p class="font-medium">Figma, HTML, CSS, React</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <main class="max-w-7xl mx-auto py-32 px-8 space-y-40">
+        
+        <!-- The Vision -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-5">
+                <h2 class="text-4xl font-semibold mb-6">The Vision</h2>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    Clevanta was born from the need for a design partner that understands both the visual language of luxury and the technical constraints of modern software. As the founder, I wear multiple hats—from leading user research to writing the front-end code that brings our designs to life.
+                </p>
+            </div>
+            <div class="lg:col-span-7 space-y-8">
+                <div class="p-10 border border-white/5 bg-brand-slate rounded-3xl group hover:border-brand-accent transition-colors">
+                    <h4 class="text-xl font-semibold mb-4 text-brand-accent">Enterprise Credibility</h4>
+                    <p class="text-gray-400">We help early-stage startups look like industry leaders through pixel-perfect execution and cohesive branding.</p>
+                </div>
+                <div class="p-10 border border-white/5 bg-brand-slate rounded-3xl group hover:border-brand-accent transition-colors">
+                    <h4 class="text-xl font-semibold mb-4 text-brand-accent">Full-Stack Design</h4>
+                    <p class="text-gray-400">Our process doesn't end at Figma. We implement our designs using modern web technologies to ensure zero-loss handoffs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visuals 1: Branding Focus -->
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="md:col-span-2 aspect-[16/9] overflow-hidden rounded-3xl bg-brand-muted">
+                    <img class="w-full h-full object-cover" src="images/clevanta2.jpg" alt="flat lay of branding materials for a tech agency, business cards, letterhead, dark mode UI on a tabl" />
+                </div>
+                <div class="aspect-square overflow-hidden rounded-3xl bg-brand-muted">
+                    <img class="w-full h-full object-cover" src="images/clevanta3.png" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <!-- The Process -->
+        <section class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-12">The Clevanta Method</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6">
+                    <div class="text-4xl font-bold mb-4 opacity-10">01</div>
+                    <h5 class="text-xl font-semibold mb-4">Deep Research</h5>
+                    <p class="text-gray-500 text-sm">Understanding the market gap and user pain points before a single pixel is moved.</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold mb-4 opacity-10">02</div>
+                    <h5 class="text-xl font-semibold mb-4">High-Fi Prototyping</h5>
+                    <p class="text-gray-500 text-sm">Rapidly iterating through high-fidelity mocks to align stakeholders early.</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold mb-4 opacity-10">03</div>
+                    <h5 class="text-xl font-semibold mb-4">Code Delivery</h5>
+                    <p class="text-gray-500 text-sm">Delivering functional HTML/CSS components to speed up engineering cycles.</p>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- Outcome -->
+        <section class="py-24 px-12 bg-brand-accent text-brand-dark rounded-[3rem] flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-8 md:mb-0">
+                <h2 class="text-4xl font-bold mb-2">Ready to Elevate?</h2>
+                <p class="text-lg font-medium opacity-80">Partner with Clevanta for your next digital venture.</p>
+            </div>
+            <a href="https://clevanta.com/" class="px-10 py-4 bg-brand-dark text-white rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform">Start a Project</a>
+        </section>
+
+    </main>
+
+      <!-- Contact / Footer -->
+      <footer id="contact" class="py-24 px-8 border-t border-white/5">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div class="mb-12 md:mb-0">
+                <h2 class="text-5xl font-semibold mb-6">Let's work together</h2>
+                <p class="text-gray-400 max-w-md">Have a project in mind? I'm always open to discussing new opportunities and creative ideas.</p>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <a href="#" class="text-right text-xl hover:text-brand-accent transition-colors">nimitapriyadarshi3@gmail.com</a>
+                <div class="flex space-x-6 justify-end pt-4">
+                    <a href="https://www.linkedin.com/in/nimita-priyadarshi-896364246/" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+            
+                </div>
+            </div>
+        </div>
+        <div class="mt-24 pt-8 border-t border-white/5 flex justify-between text-xs text-gray-600 uppercase tracking-widest">
+            <span>© 2026 Nimita Priyadarshi</span>
+            <span>All Rights Reserved</span>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimita| UI/UX & Social Media Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a0a0a',
+                            light: '#fafafa',
+                            accent: '#00ff9c',
+                            muted: '#1f1f1f',
+                            slate: '#121212'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #fafafa; overflow-x: hidden; }
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 0; height: 1px; bottom: -2px; left: 0;
+            background-color: #fafafa; transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+        .project-card:hover .project-overlay { opacity: 1; }
+        .project-card:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="antialiased">
+
+     <!-- Navigation -->
+     <nav class="fixed top-0 left-0 w-full z-50 px-8 py-6 flex justify-between items-center bg-brand-dark/90 backdrop-blur-md border-b border-white/5">
+        <a href="index.html" class="text-xl font-bold tracking-tight">Nimita.</a>
+        <ul class="flex space-x-8 text-sm font-medium text-gray-400">
+            <li><a href="services.html" class="nav-link hover:text-white transition-colors">Services</a></li>
+            <li><a href="about.html" class="nav-link text-white">About</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header id="hero" class="relative min-h-[90vh] flex flex-col justify-center px-8 pt-20">
+        <div class="max-w-4xl">
+            <h1 class="text-6xl md:text-7xl font-semibold leading-tight mb-8">
+                Crafting digital experiences that blend aesthetics with functionality.
+            </h1>
+            <p class="text-xl text-gray-400 max-w-2xl mb-12">
+                I'm Nimita Priyadarshi, a UI/UX Designer & Social Media Strategist specializing in creating impactful interfaces and brand narratives.
+            </p>
+            <a href="#work" class="inline-flex items-center group">
+                <span class="w-12 h-[2px] bg-white mr-4 transition-all group-hover:w-20"></span>
+                <span class="uppercase tracking-widest text-xs font-bold">View Selected Work</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Featured Work Grid -->
+    <section id="work" class="py-24 px-8 bg-brand-slate">
+        <div class="flex justify-between items-end mb-16">
+            <h2 class="text-4xl font-semibold">Selected Work</h2>
+            <span class="text-gray-500 text-sm">(3 Projects)</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+           <!-- Project 1: AlphaTree -->
+<article class="group project-card cursor-pointer">
+    <div class="relative overflow-hidden bg-brand-muted aspect-[4/3] mb-6">
+        <img 
+            class="w-full h-full object-cover transition-transform duration-700" 
+            src="images/alpha1.jpg" 
+            alt="sleek modern fintech trading dashboard UI on laptop screen, clean white interface with green accents" 
+        />
+
+        <div class="project-overlay absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+            <a 
+                href="alpha.html" 
+                class="px-6 py-2 border border-white rounded-full uppercase text-xs tracking-widest font-bold text-white hover:bg-white hover:text-black transition-colors duration-300"
+            >
+                View Case Study
+            </a>
+        </div>
+    </div>
+
+    <div class="flex justify-between items-start">
+        <div>
+            <h3 class="text-2xl font-medium mb-2">AlphaTree</h3>
+            <p class="text-gray-400 text-sm max-w-md">
+                Associate UX Designer at WalkingTree Technologies. Supporting end-to-end UX for this AI-driven wealth management platform.
+            </p>
+        </div>
+
+        <span class="text-xs text-gray-500 border border-white/10 px-2 py-1 rounded">
+            UI/UX Design
+        </span>
+    </div>
+</article>
+           <!-- Project 2: Noah (Cortif Technologies) -->
+<a href="cortif.html" class="group project-card cursor-pointer block">
+
+    <div class="relative overflow-hidden bg-brand-muted aspect-[4/3] mb-6">
+        <img 
+            class="w-full h-full object-cover transition-transform duration-700" 
+            src="images/noah1.jpg" 
+            alt="dark mode AI analytics dashboard interface with lime green data visualization, futuristic monitoring" 
+        />
+
+        <div class="project-overlay absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+            <span class="px-6 py-2 border border-white rounded-full uppercase text-xs tracking-widest font-bold text-white">
+                View Case Study
+            </span>
+        </div>
+    </div>
+
+    <div class="flex justify-between items-start">
+        <div>
+            <h3 class="text-2xl font-medium mb-2">Noah by Cortif</h3>
+            <p class="text-gray-400 text-sm max-w-md">
+                Main founding designer for the Noah AI platform. Owned UX and visual direction from concept to launch as a UI UX Intern.
+            </p>
+        </div>
+
+        <span class="text-xs text-gray-500 border border-white/10 px-2 py-1 rounded">
+            Founding Designer
+        </span>
+    </div>
+
+</a>
+
+            <!-- Project 3: Clevanta Consulting -->
+<a href="clevanta.html" class="group project-card cursor-pointer md:col-span-2 block">
+
+    <div class="relative overflow-hidden bg-brand-muted aspect-[21/9] mb-6">
+        <img 
+            class="w-full h-full object-cover transition-transform duration-700" 
+            src="images/clevanta1.jpg" 
+            alt=""
+        />
+
+        <div class="project-overlay absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+            <span class="px-6 py-2 border border-white rounded-full uppercase text-xs tracking-widest font-bold text-white">
+                View Case Study
+            </span>
+        </div>
+    </div>
+
+    <div class="flex justify-between items-start">
+        <div>
+            <h3 class="text-2xl font-medium mb-2">Clevanta Consulting</h3>
+            <p class="text-gray-400 text-sm max-w-lg">
+                Founder and UI UX Designer. Built enterprise credibility through high-fidelity UI design and front-end implementation.
+            </p>
+        </div>
+
+        <span class="text-xs text-gray-500 border border-white/10 px-2 py-1 rounded">
+            Branding + Web
+        </span>
+    </div>
+
+</a>
+    <!-- Services / Expertise -->
+    <section id="services" class="py-24 px-8 border-t border-white/5">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="space-y-4">
+                <i class="fa-solid fa-pen-nib text-2xl text-white"></i>
+                <h3 class="text-xl font-semibold">UI/UX Design</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">End-to-end product design from research to high-fidelity implementation (Figma/HTML/CSS).</p>
+            </div>
+            <div class="space-y-4">
+                <i class="fa-solid fa-chart-line text-2xl text-white"></i>
+                <h3 class="text-xl font-semibold">Social Media Marketing</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Content creation for TikTok and LinkedIn, optimized for storytelling and engagement.</p>
+            </div>
+            <div class="space-y-4">
+                <i class="fa-solid fa-bezier-curve text-2xl text-white"></i>
+                <h3 class="text-xl font-semibold">AI Design Workflows</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Leveraging UXPilot and AI-driven UX patterns to enhance product experiences and efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="py-24 px-8 border-t border-white/5">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div class="mb-12 md:mb-0">
+                <h2 class="text-5xl font-semibold mb-6">Let's work together</h2>
+                <p class="text-gray-400 max-w-md">Have a project in mind? I'm always open to discussing new opportunities and creative ideas.</p>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <a href="#" class="text-right text-xl hover:text-brand-accent transition-colors">nimitapriyadarshi3@gmail.com</a>
+                <div class="flex space-x-6 justify-end pt-4">
+                    <a href="https://www.linkedin.com/in/nimita-priyadarshi-896364246/" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+            
+                </div>
+            </div>
+        </div>
+        <div class="mt-24 pt-8 border-t border-white/5 flex justify-between text-xs text-gray-600 uppercase tracking-widest">
+            <span>© 2026 Nimita Priyadarshi</span>
+            <span>All Rights Reserved</span>
+        </div>
+    </footer>
+
+</body>
+</html>

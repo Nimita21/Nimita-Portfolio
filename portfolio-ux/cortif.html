@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah by Cortif Case Study | Nimita Priyadarshi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a0a0a',
+                            light: '#fafafa',
+                            accent: '#00ff9c',
+                            muted: '#1f1f1f',
+                            slate: '#121212'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #fafafa; overflow-x: hidden; }
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 0; height: 1px; bottom: -2px; left: 0;
+            background-color: #fafafa; transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 px-8 py-6 flex justify-between items-center bg-brand-dark/90 backdrop-blur-md border-b border-white/5">
+        <a href="index.html" class="text-xl font-bold tracking-tight">Nimita.</a>
+        <ul class="flex space-x-8 text-sm font-medium text-gray-400">
+            <li><a href="services.html" class="nav-link hover:text-white transition-colors">Services</a></li>
+            <li><a href="about.html" class="nav-link text-white">About</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Project Hero -->
+    <header class="pt-48 pb-24 px-8 max-w-7xl mx-auto">
+        <div class="mb-12">
+            <span class="text-brand-accent font-mono text-sm mb-4 block uppercase tracking-widest">AI Platform • Monitoring & Observability</span>
+            <h1 class="text-6xl md:text-8xl font-semibold leading-tight mb-8">Noah</h1>
+            <p class="text-2xl text-gray-400 max-w-3xl leading-relaxed">
+                Empowering AI researchers with a robust, high-fidelity monitoring platform for model drift and performance observability.
+            </p>
+        </div>
+        
+        <div class="relative w-full aspect-[21/9] overflow-hidden rounded-3xl bg-brand-muted">
+            <img class="w-full h-full object-cover" src="images/noah1.jpg" alt="ultramodern dark mode AI monitoring dashboard, vibrant lime green data visualizations, neural networ" />
+        </div>
+    </header>
+
+    <!-- Project Meta -->
+    <section class="py-16 px-8 border-y border-white/5 bg-brand-slate/50">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12">
+            <div>
+                <span class="text-xs uppercase tracking-widest text-gray-500 mb-2 block">Role</span>
+                <p class="font-medium">Main Founding Designer</p>
+            </div>
+            <div>
+                <span class="text-xs uppercase tracking-widest text-gray-500 mb-2 block">Status</span>
+                <p class="font-medium">UI UX Intern (Startup Founding Team)</p>
+            </div>
+            <div>
+                <span class="text-xs uppercase tracking-widest text-gray-500 mb-2 block">Company</span>
+                <p class="font-medium">Cortif Technologies</p>
+            </div>
+            <div>
+                <span class="text-xs uppercase tracking-widest text-gray-500 mb-2 block">Tools</span>
+                <p class="font-medium">Figma</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <main class="max-w-7xl mx-auto py-32 px-8 space-y-40">
+        
+        <!-- The Challenge -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-5">
+                <h2 class="text-4xl font-semibold mb-6">The Challenge</h2>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    As the sole designer for a stealth-mode startup, I was tasked with creating a platform that could visualize complex AI model metrics for technical users while maintaining a premium, "enterprise-grade" aesthetic that builds investor confidence.
+                </p>
+            </div>
+            <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-8 border border-white/5 bg-brand-slate rounded-2xl h-full">
+                    <div class="w-10 h-10 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 text-brand-accent">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-4">Drift Detection</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">Visualizing the subtle shift in model accuracy over time across millions of data points.</p>
+                </div>
+                <div class="p-8 border border-white/5 bg-brand-slate rounded-2xl h-full">
+                    <div class="w-10 h-10 bg-brand-accent/10 rounded-lg flex items-center justify-center mb-6 text-brand-accent">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-4">Scalable Systems</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">Building a flexible design system from scratch that could evolve with the rapid engineering pivots.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visuals 1: The Dashboard -->
+        <section>
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold mb-4 italic text-gray-500">Core Dashboard Architecture</h3>
+            </div>
+            <div class="relative w-full aspect-[16/10] overflow-hidden rounded-3xl bg-brand-muted border border-white/5">
+                <img class="w-full h-full object-cover" src="images/noah2.jpg" alt="wide desktop view of a complex AI dashboard, dark mode, neon green accents, interactive charts for m" />
+            </div>
+        </section>
+
+        <!-- The Solution -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+             <div class="lg:col-span-7 order-2 lg:order-1">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-brand-muted">
+                        <img class="w-full h-full object-cover" src="images/noah3.jpg" alt="screen showing model health status, glowing status indicators, minimalist dark inter" />
+                    </div>
+                    <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-brand-muted mt-12">
+                        <img class="w-full h-full object-cover" src="images/noah4.jpg" alt="detail of a dark mode UI component library, buttons, dropdowns, and toggles with neon green accents," />
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-5 order-1 lg:order-2">
+                <h2 class="text-4xl font-semibold mb-8">The Solution</h2>
+                <div class="space-y-6 text-lg text-gray-400 leading-relaxed">
+                    <p>
+                        I designed <span class="text-white">Noah</span> with a focus on "Data Clarity." By utilizing high-contrast visuals and interactive drill-downs, researchers can identify model anomalies in seconds rather than hours.
+                    </p>
+                    <p>
+                        The branding was designed to be futuristic yet stable, using a deep monochromatic palette with green accents to signify growth and precision.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Final Visual -->
+        <section class="relative w-full aspect-[21/9] overflow-hidden rounded-3xl bg-brand-muted">
+            <img class="w-full h-full object-cover" src="images/noah5.jpg" alt="scenic view of a tech office at night, designer working on a laptop with the Noah AI dashboard on sc" />
+        </section>
+
+    </main>
+
+      <!-- Contact / Footer -->
+      <footer id="contact" class="py-24 px-8 border-t border-white/5">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div class="mb-12 md:mb-0">
+                <h2 class="text-5xl font-semibold mb-6">Let's work together</h2>
+                <p class="text-gray-400 max-w-md">Have a project in mind? I'm always open to discussing new opportunities and creative ideas.</p>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <a href="#" class="text-right text-xl hover:text-brand-accent transition-colors">nimitapriyadarshi3@gmail.com</a>
+                <div class="flex space-x-6 justify-end pt-4">
+                    <a href="https://www.linkedin.com/in/nimita-priyadarshi-896364246/" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+            
+                </div>
+            </div>
+        </div>
+        <div class="mt-24 pt-8 border-t border-white/5 flex justify-between text-xs text-gray-600 uppercase tracking-widest">
+            <span>© 2026 Nimita Priyadarshi</span>
+            <span>All Rights Reserved</span>
+        </div>
+    </footer>
+
+</body>
+</html>
