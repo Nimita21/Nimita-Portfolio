@@ -44,6 +44,7 @@
         .project-card:hover .project-overlay { opacity: 1; }
         .project-card:hover img { transform: scale(1.05); }
     </style>
+    
 </head>
 <body class="antialiased">
 
@@ -72,32 +73,7 @@
             </a>
         </div>
     </header>
-<div class="marq" aria-hidden="true">
-  <div id="marq"></div>
-</div>
-    .marq{
-  overflow:hidden;
-  border-block:1px solid var(--line);
-  padding:14px 0;
-  font:800 24px "Bricolage Grotesque", sans-serif;
-  color:var(--mute);
-}
-.marq div{
-  display:flex;
-  gap:44px;
-  width:max-content;   /* lets the row be wider than the screen */
-}
 
-@media (prefers-reduced-motion:no-preference){
-  .marq div{ animation:mq 32s linear infinite; }
-  .marq:hover div{ animation-play-state:paused; }
-  @keyframes mq{ to{ transform:translateX(-50%); } }
-}
-    document.getElementById('marq').innerHTML = (
-  '<span>Figma</span><span>Webflow</span><span>UXPilot</span>' +
-  '<span>Photoshop</span><span>Illustrator</span><span>After Effects</span>' +
-  '<span>Premiere Pro</span><span>HTML/CSS</span>'
-).repeat(2);
     
     <!-- Featured Work Grid -->
     <section id="work" class="py-24 px-8 bg-brand-slate">
